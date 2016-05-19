@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Drupal Module: Heap Analytics.
+ *
+ * @author: Iztok Smolič <http://drupal.org/user/123987>
+ */
+
+/**
+ * Implements hook_help().
+ */
+function heap_analytics_help($route_name) {
+  switch ($route_name) {
+    case 'heap_analytics.settings':
+      return t('<a href="@heap_url">Heap</a> is an instant, retroactive analytics for web and iOS. No code for event tracking required.', array('@heap_url' => 'https://heapanalytics.com'));
+  }
+}
