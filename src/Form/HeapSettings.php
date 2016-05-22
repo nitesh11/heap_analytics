@@ -58,6 +58,7 @@ class HeapSettings extends ConfigFormBase {
       '#title' => $this->t('Pages'),
       '#collapsible' => TRUE,
       '#collapsed' => TRUE,
+      '#group' => 'tracking',
     );
 
     if ($visibility == 2 && !$php_access) {
@@ -106,6 +107,7 @@ class HeapSettings extends ConfigFormBase {
     $form['role_vis_settings'] = array(
       '#type' => 'details',
       '#title' => $this->t('Roles'),
+      '#group' => 'tracking',
     );
 
     $form['role_vis_settings']['heap_analytics_visibility_roles'] = array(
@@ -131,6 +133,7 @@ class HeapSettings extends ConfigFormBase {
     $form['privacy'] = array(
       '#type' => 'details',
       '#title' => $this->t('Privacy'),
+      '#group' => 'tracking',
     );
     $form['privacy']['heap_analytics_privacy_donottrack'] = array(
       '#type' => 'checkbox',
